@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1741822514 source:c:\users\lucas vieira\desktop\main_repo\mine\projects\c_programming_language\cfinance\strcen.c
+	"strcen.h"
+
+1741825429 c:\users\lucas vieira\desktop\main_repo\mine\projects\c_programming_language\cfinance\strcen.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1741825459 source:c:\users\lucas vieira\desktop\main_repo\mine\projects\c_programming_language\cfinance\cfinance.c
+	"cfinance.h"
+	"strcen.h"
+
+1741820010 c:\users\lucas vieira\desktop\main_repo\mine\projects\c_programming_language\cfinance\cfinance.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
