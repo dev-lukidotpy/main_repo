@@ -1,46 +1,56 @@
-#include <stdio.h>
-#include <string.h>
+#include "strcen.h"
 
-void strcen(int str_len, char *str_adress) {
-    int original_len = strlen(str_adress);
+void strcen(int str_len, char str[], char edge) {
+    int string_to_centralize_len = strlen(str);
 
-    if (str_len <= original_len) {
-        printf("Error: str_len must be larger than the length of the string.\n");
+    char *centralized_string = malloc(sizeof(char) * str_len);
+
+    if (str_len <= string_to_centralize_len) {
+        printf("Error: arg str_len must be larger than the length of the inputted string\n");
+
         return;
     }
 
-    int trim = (str_len - original_len) / 2;
+    int trim = (str_len - string_to_centralize_len) / 2;
 
     char result_str[str_len + 1];
 
     for (int i = 0; i < trim; i++) {
-        result_str[i] = ' ';
+        if (i == 0) {
+            result_str[i] = edge;
+        } else {
+            result_str[i] = ' ';
+        }
     }
 
-    strcpy(result_str + trim, str_adress);
+    strcpy(result_str + trim, str);
 
-    for (int i = trim + original_len; i < str_len; i++) {
-        result_str[i] = ' ';
+    for (int i = trim + string_to_centralize_len; i < str_len; i++) {
+        if (i == str_len - 1) {
+            result_str[i] = edge;
+        } else {
+            result_str[i] = ' ';
+        }
     }
 
     result_str[str_len] = '\0';
 
-    strcpy(str_adress, result_str);
+    strcpy(centralized_string, result_str);
+
+    printf("%s\n", centralized_string);
 }
 
-int main() {
-    char string[60] = "teste";
+void strmult(int number_of_times, char string_to_repeat[]) {
+    int str_len = strlen(string_to_repeat);
+    int length_to_alloc = (number_of_times * str_len);
 
-    printf("Before: %p\n", string);
-    printf("Before: %s\n", string);
+    char *result_str = malloc(sizeof(char) * length_to_alloc);
 
-    strcen(58, string);
+    strcpy(result_str, string_to_repeat);
 
-    printf("After: %p\n", string);
+    for (int i = 0; i < length_to_alloc; i += str_len) {
+        strcpy(&result_str[i], string_to_repeat);
+    }
 
-    printf("%c", '=');
-    printf("%s", string);
-    printf("%c", '=');
-
-    return 0;
+    printf("%s\n", result_str);
 }
