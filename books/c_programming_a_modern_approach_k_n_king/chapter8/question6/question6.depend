@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1744071127 source:c:\users\lucas vieira\desktop\main_repo\books\c_programming_a_modern_approach_k_n_king\chapter8\question6\main.c
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+

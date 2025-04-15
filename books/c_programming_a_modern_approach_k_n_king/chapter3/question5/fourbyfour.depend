@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1741797969 source:c:\users\lucas vieira\desktop\main_repo\courses\books\c_programming_a_modern_approach_k_n_king\fourbyfour\main.c
+	<stdio.h>
+	<stdlib.h>
+

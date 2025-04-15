@@ -1,0 +1,9 @@
+# specific to CodeBlocks IDE
+*.layout
+*.depend
+*.cbp
+# *.cbp added by me
+# generated directories
+bin/
+obj/
+# from https://github.com/toptal/gitignore/blob/master/templates/CodeBlocks.gitignore

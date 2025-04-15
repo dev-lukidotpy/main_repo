@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1739636383 source:c:\users\lucas vieira\desktop\lucas\estudos\pessoal\alura\repositórios\linguagem c\rockpaperscizors\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"main.h"
+
+1739636162 c:\users\lucas vieira\desktop\lucas\estudos\pessoal\alura\repositórios\linguagem c\rockpaperscizors\main.h
+

@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1739235127 source:c:\users\lucas vieira\desktop\lucas\estudos\pessoal\alura\repositórios\linguagem c\fogefoge\mapa.c
+	<stdio.h>
+	<stdlib.h>
+	"mapa.h"
+	<string.h>
+
+1739290249 c:\users\lucas vieira\desktop\lucas\estudos\pessoal\alura\repositórios\linguagem c\fogefoge\mapa.h
+

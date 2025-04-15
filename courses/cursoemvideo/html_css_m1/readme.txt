@@ -1,0 +1,1 @@
+Deixei essa pasta em branco pois não achei necessário guardar nenhum dos exercícios e desafios
